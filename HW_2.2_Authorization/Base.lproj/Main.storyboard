@@ -23,7 +23,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="J23-Uz-WXK" kind="show" id="yep-Jc-FIZ"/>
+                                    <segue destination="J23-Uz-WXK" kind="show" identifier="welcomeSegue" id="yep-Jc-FIZ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-4J-x3i">
@@ -32,12 +32,18 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itG-hV-zc3">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="jMS-I7-4u0"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pE-ek-bfe">
                                         <rect key="frame" x="0.0" y="51" width="335" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="qdg-HM-Dds"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -81,6 +87,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="1Gx-fm-V4H" id="E0a-6W-xrh"/>
                         <outlet property="passwordTF" destination="5pE-ek-bfe" id="jgn-PJ-7fN"/>
                         <outlet property="userNameTF" destination="itG-hV-zc3" id="z3B-tG-8UH"/>
                     </connections>
