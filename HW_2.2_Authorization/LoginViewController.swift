@@ -12,12 +12,6 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var passwordTF: UITextField!
   @IBOutlet weak var loginButton: UIButton!
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    loginButtonDisabled()
-  }
-  
   @IBAction func pressForgotUserName() {
     showAlert(title: "Oops!", message: "Your name is Alex")
   }
@@ -34,11 +28,11 @@ class LoginViewController: UIViewController {
   @IBAction func unwind(for segue: UIStoryboardSegue) {
     userNameTF.text = nil
     passwordTF.text = nil
-    loginButtonDisabled()
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super .touchesBegan(touches, with: event)
+    view.endEditing(true)
   }
 }
 
@@ -52,34 +46,13 @@ extension LoginViewController {
 }
 
 extension LoginViewController: UITextFieldDelegate {
-  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    let text = (userNameTF.text! as NSString).replacingCharacters(in: range, with: string)
-    if text.isEmpty {
-      loginButtonDisabled()
-    } else {
-      loginButtonEnabled()
-    }
-    return true
-  }
-
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     if textField.returnKeyType == .next {
-      userNameTF.resignFirstResponder()
       passwordTF.becomeFirstResponder()
     } else if textField.returnKeyType == .done {
       self.performSegue(withIdentifier: "welcomeSegue", sender: self)
     }
     return true
-  }
-  
-  private func loginButtonEnabled() {
-    loginButton.isEnabled = true
-    loginButton.alpha = 1.0
-  }
-  
-  private func loginButtonDisabled() {
-    loginButton.isEnabled = false
-    loginButton.alpha = 0.5
   }
 }
 

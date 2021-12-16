@@ -18,12 +18,8 @@ class WelcomeViewController: UIViewController {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-      setGradientBackground()
-      super.viewWillAppear(animated)
-  }
-  
-  @IBAction func pressLogOut() {
-    dismiss(animated: true)
+    super.viewWillAppear(animated)
+    setGradientBackground()
   }
   
   private func setGradientBackground() {
