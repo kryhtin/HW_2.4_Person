@@ -14,6 +14,8 @@
 		2C8C28FE2768F8E1000E4F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C28FD2768F8E1000E4F2C /* Assets.xcassets */; };
 		2C8C29012768F8E1000E4F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C28FF2768F8E1000E4F2C /* LaunchScreen.storyboard */; };
 		2C8C290B2768F9E2000E4F2C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */; };
+		2CC08A0B276CA9660010318B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC08A0A276CA9660010318B /* User.swift */; };
+		2CC08A0D276CA9740010318B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC08A0C276CA9740010318B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2C8C29002768F8E1000E4F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8C29022768F8E1000E4F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2CC08A0A276CA9660010318B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2CC08A0C276CA9740010318B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		2CD419E8276C98FC00412866 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CC08A0A276CA9660010318B /* User.swift */,
+				2CC08A0C276CA9740010318B /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC08A0D276CA9740010318B /* Person.swift in Sources */,
 				2C8C28F92768F8DF000E4F2C /* LoginViewController.swift in Sources */,
 				2C8C290B2768F9E2000E4F2C /* WelcomeViewController.swift in Sources */,
 				2C8C28F52768F8DF000E4F2C /* AppDelegate.swift in Sources */,
+				2CC08A0B276CA9660010318B /* User.swift in Sources */,
 				2C8C28F72768F8DF000E4F2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
