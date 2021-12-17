@@ -58,16 +58,56 @@
 		2C8C28F32768F8DF000E4F2C /* HW_2.2_Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				2C8C28F42768F8DF000E4F2C /* AppDelegate.swift */,
-				2C8C28F62768F8DF000E4F2C /* SceneDelegate.swift */,
-				2C8C28F82768F8DF000E4F2C /* LoginViewController.swift */,
-				2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */,
-				2C8C28FA2768F8DF000E4F2C /* Main.storyboard */,
-				2C8C28FD2768F8E1000E4F2C /* Assets.xcassets */,
-				2C8C28FF2768F8E1000E4F2C /* LaunchScreen.storyboard */,
-				2C8C29022768F8E1000E4F2C /* Info.plist */,
+				2CD419E8276C98FC00412866 /* Models */,
+				2CD419EB276C996D00412866 /* SupportFiles */,
+				2CD419E9276C992600412866 /* ViewControllers */,
+				2CD419EA276C994100412866 /* Storyboards */,
+				2CD419EC276C997A00412866 /* Resources */,
 			);
 			path = HW_2.2_Authorization;
+			sourceTree = "<group>";
+		};
+		2CD419E8276C98FC00412866 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CD419E9276C992600412866 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C28F82768F8DF000E4F2C /* LoginViewController.swift */,
+				2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2CD419EA276C994100412866 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C28FA2768F8DF000E4F2C /* Main.storyboard */,
+				2C8C28FF2768F8E1000E4F2C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2CD419EB276C996D00412866 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C28F42768F8DF000E4F2C /* AppDelegate.swift */,
+				2C8C28F62768F8DF000E4F2C /* SceneDelegate.swift */,
+				2C8C29022768F8E1000E4F2C /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		2CD419EC276C997A00412866 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C28FD2768F8E1000E4F2C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW_2.2_Authorization/Info.plist;
+				INFOPLIST_FILE = HW_2.2_Authorization/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Authorization;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -323,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW_2.2_Authorization/Info.plist;
+				INFOPLIST_FILE = HW_2.2_Authorization/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Authorization;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
