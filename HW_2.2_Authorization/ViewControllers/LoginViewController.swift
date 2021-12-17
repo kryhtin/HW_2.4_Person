@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var loginButton: UIButton!
   
   @IBAction func pressForgotUserName() {
-    showAlert(title: "Oops!", message: "Your name is Alex")
+    showAlert(title: "Oops!", message: "Your name is Dmitriy")
   }
   
   @IBAction func pressForgotPassword() {
@@ -21,8 +21,13 @@ class LoginViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let welcomeVS = segue.destination as! WelcomeViewController
-    welcomeVS.welcomeStr = userNameTF.text
+    let tabBarController = segue.destination as! UITabBarController
+    let viewControllers = tabBarController.viewControllers
+    for viewController in viewControllers! {
+      if let welcomeVC = viewController as? WelcomeViewController {
+        welcomeVC.welcomeStr = userNameTF.text
+      }
+    }
   }
   
   @IBAction func unwind(for segue: UIStoryboardSegue) {
