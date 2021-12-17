@@ -20,6 +20,17 @@ class LoginViewController: UIViewController {
     showAlert(title: "Oops!", message: "Your password is 123456")
   }
   
+  @IBAction func pressLogIn() {
+    do {
+      _ = try userNameTF.validatedText(validationType: .username)
+      _ = try passwordTF.validatedText(validationType: .password)
+      performSegue(withIdentifier: "WelcomeSegue", sender: self)
+    } catch let error {
+      let message = (error as! ValidationError).message
+      showAlert(title: "Oops!", message: message)
+    }
+  }
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let tabBarController = segue.destination as! UITabBarController
     let viewControllers = tabBarController.viewControllers
@@ -55,9 +66,16 @@ extension LoginViewController: UITextFieldDelegate {
     if textField.returnKeyType == .next {
       passwordTF.becomeFirstResponder()
     } else if textField.returnKeyType == .done {
-      self.performSegue(withIdentifier: "welcomeSegue", sender: self)
+      self.performSegue(withIdentifier: "WelcomeSegue", sender: self)
     }
     return true
+  }
+}
+
+extension UITextField {
+  func validatedText(validationType: ValidatorType) throws -> String {
+    let validator = VaildatorFactory.validatorFor(type: validationType)
+    return try validator.validated(self.text)
   }
 }
 
