@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var passwordTF: UITextField!
   @IBOutlet weak var loginButton: UIButton!
   
+  var user: User!
+  
   @IBAction func pressForgotUserName() {
     showAlert(title: "Oops!", message: "Your name is Dmitriy")
   }
@@ -22,8 +24,9 @@ class LoginViewController: UIViewController {
   
   @IBAction func pressLogIn() {
     do {
-      _ = try userNameTF.validatedText(validationType: .username)
-      _ = try passwordTF.validatedText(validationType: .password)
+      let username = try userNameTF.validatedText(validationType: .username)
+      let password = try passwordTF.validatedText(validationType: .password)
+      user = User(username: username, password: password)
       performSegue(withIdentifier: "WelcomeSegue", sender: self)
     } catch let error {
       let message = (error as! ValidationError).message
@@ -32,13 +35,8 @@ class LoginViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let tabBarController = segue.destination as! UITabBarController
-    let viewControllers = tabBarController.viewControllers
-    for viewController in viewControllers! {
-      if let welcomeVC = viewController as? WelcomeViewController {
-        welcomeVC.welcomeStr = userNameTF.text
-      }
-    }
+    let tabBarController = segue.destination as! TabViewController
+    tabBarController.user = user
   }
   
   @IBAction func unwind(for segue: UIStoryboardSegue) {

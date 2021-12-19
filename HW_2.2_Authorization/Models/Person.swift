@@ -7,6 +7,9 @@
 
 import Foundation
 
-struct Person {
-  
+class Person {
+  let name = "Dmitriy Kryhtin"
+  let aboutMe = "What aboute me"
+  let work = "My work is"
+  let hobby = "My hobby is"
 }

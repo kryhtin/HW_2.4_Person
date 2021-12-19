@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct User {
+class User {
   var username: String
   var password: String
-  var person: Person
+  let person: Person = Person()
+  
+  init(username: String, password: String) {
+    self.username = username
+    self.password = password
+  }
 }

@@ -9,11 +9,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
   @IBOutlet weak var welcomeLabel: UILabel!
-  
-  var welcomeStr: String!
+  @IBOutlet weak var aboutMeText: UITextView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    welcomeLabel.text = "Welcome, \(welcomeStr ?? "User")!"
+    
+    let tabBarController = self.tabBarController as! TabViewController
+    welcomeLabel.text = "Welcome, \(tabBarController.user.username)!"
+    aboutMeText.text = tabBarController.user.person.aboutMe
   }
 }
