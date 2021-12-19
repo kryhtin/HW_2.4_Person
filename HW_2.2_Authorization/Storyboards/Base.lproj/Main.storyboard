@@ -204,16 +204,26 @@
                                     <constraint firstAttribute="height" constant="242" id="O2e-h8-Raq"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N8k-Gj-Vow">
+                                <rect key="frame" x="20" y="327" width="374" height="183.5"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BWa-7e-NlD"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="BWa-7e-NlD" firstAttribute="trailing" secondItem="N8k-Gj-Vow" secondAttribute="trailing" constant="20" id="8Zm-K4-GMX"/>
                             <constraint firstItem="Agq-rb-9nG" firstAttribute="leading" secondItem="BWa-7e-NlD" secondAttribute="leading" constant="20" id="Do2-X1-SJK"/>
                             <constraint firstItem="xDZ-UI-5A7" firstAttribute="top" secondItem="BWa-7e-NlD" secondAttribute="top" constant="20" id="Hzl-i0-0YV"/>
                             <constraint firstItem="BWa-7e-NlD" firstAttribute="trailing" secondItem="xDZ-UI-5A7" secondAttribute="trailing" constant="20" id="KJV-cv-1ZS"/>
                             <constraint firstItem="BWa-7e-NlD" firstAttribute="trailing" secondItem="Agq-rb-9nG" secondAttribute="trailing" constant="20" id="N8f-uc-Aea"/>
                             <constraint firstItem="xDZ-UI-5A7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BWa-7e-NlD" secondAttribute="leading" symbolic="YES" id="e4G-zV-m3e"/>
                             <constraint firstItem="Agq-rb-9nG" firstAttribute="top" secondItem="BWa-7e-NlD" secondAttribute="top" constant="57" id="icI-CG-Gmh"/>
+                            <constraint firstItem="N8k-Gj-Vow" firstAttribute="leading" secondItem="BWa-7e-NlD" secondAttribute="leading" constant="20" id="qJM-Tb-riF"/>
+                            <constraint firstItem="N8k-Gj-Vow" firstAttribute="top" secondItem="Agq-rb-9nG" secondAttribute="bottom" constant="28" id="upf-nj-Czn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Work" image="keyboard" catalog="system" selectedImage="keyboard" id="Axk-5z-l1o"/>
@@ -221,7 +231,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZX-sv-6ON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="yHk-48-MED" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2495.6521739130435" y="92.410714285714278"/>
+            <point key="canvasLocation" x="2494.202898550725" y="92.410714285714278"/>
         </scene>
         <!--Hobby-->
         <scene sceneID="dFm-U9-mHF">
@@ -235,14 +245,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="360" height="759"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="Vd5-l1-Dvl">
-                                        <rect key="frame" x="20" y="57" width="320" height="242"/>
+                                        <rect key="frame" x="24" y="57" width="320" height="242"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="242" id="2rn-Yl-oG0"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="242" id="uOt-c5-f8Q"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-JL-sSg">
-                                        <rect key="frame" x="20" y="326" width="320" height="128"/>
+                                        <rect key="frame" x="24" y="326" width="320" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="1bV-tE-c4F"/>
                                         </constraints>
@@ -252,12 +262,12 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qha-er-YIB">
-                                        <rect key="frame" x="20" y="484" width="320" height="196"/>
+                                        <rect key="frame" x="20" y="484" width="324" height="196"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uOD-zO-He4">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="60"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Nas-ne-dogonyat" translatesAutoresizingMaskIntoConstraints="NO" id="pM0-Mf-c91">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="tatuN" translatesAutoresizingMaskIntoConstraints="NO" id="pM0-Mf-c91">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="M5z-RI-6Or"/>
@@ -274,18 +284,21 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz9-Dy-w5j">
-                                                        <rect key="frame" x="280" y="0.0" width="40" height="60"/>
+                                                        <rect key="frame" x="280" y="0.0" width="44" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dYc-Uq-mRI"/>
                                                         </constraints>
                                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="pressPlayButtonTatuN" destination="rnh-6m-qBu" eventType="touchUpInside" id="4da-du-MII"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pwZ-3L-HI3">
-                                                <rect key="frame" x="0.0" y="68" width="320" height="60"/>
+                                                <rect key="frame" x="0.0" y="68" width="324" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toy" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-g0-KB8">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -304,20 +317,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDT-GF-X4X">
-                                                        <rect key="frame" x="280" y="0.0" width="40" height="60"/>
+                                                        <rect key="frame" x="280" y="0.0" width="44" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="pSK-4a-XxZ"/>
                                                         </constraints>
                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="pressPlayButtonToy" destination="rnh-6m-qBu" eventType="touchUpInside" id="vr0-ff-Vum"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8vF-ca-Atd">
-                                                <rect key="frame" x="0.0" y="136" width="320" height="60"/>
+                                                <rect key="frame" x="0.0" y="136" width="324" height="60"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tatu_best" translatesAutoresizingMaskIntoConstraints="NO" id="8Zl-Pi-Z9e">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tatuA" translatesAutoresizingMaskIntoConstraints="NO" id="8Zl-Pi-Z9e">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="WbJ-Wk-rOf"/>
@@ -334,7 +350,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJr-Oq-cVM">
-                                                        <rect key="frame" x="280" y="20" width="40" height="20"/>
+                                                        <rect key="frame" x="280" y="20" width="44" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="Tjw-6C-fqj"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dZ8-UT-A2P"/>
@@ -342,6 +358,9 @@
                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="pressPlayButtonTatuA" destination="rnh-6m-qBu" eventType="touchUpInside" id="ERb-dc-ZJE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -418,14 +437,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Nas-ne-dogonyat" width="768" height="768"/>
         <image name="avatar" width="1620" height="2160"/>
         <image name="keyboard" catalog="system" width="128" height="79"/>
         <image name="music" width="3024" height="3780"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="pianokeys.inverse" catalog="system" width="128" height="93"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
-        <image name="tatu_best" width="800" height="800"/>
+        <image name="tatuA" width="800" height="800"/>
+        <image name="tatuN" width="768" height="768"/>
         <image name="toy" width="800" height="800"/>
         <image name="work" width="2200" height="1467"/>
         <systemColor name="labelColor">

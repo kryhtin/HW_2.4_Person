@@ -19,6 +19,7 @@
 		2C8C29012768F8E1000E4F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C28FF2768F8E1000E4F2C /* LaunchScreen.storyboard */; };
 		2C8C290B2768F9E2000E4F2C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */; };
 		2C9CEBED276F32D400A9500D /* all the think she said.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CEBEC276F32D400A9500D /* all the think she said.mp3 */; };
+		2CB00664276F631500BF78D6 /* toy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CB00663276F631500BF78D6 /* toy.mp3 */; };
 		2CC08A0B276CA9660010318B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC08A0A276CA9660010318B /* User.swift */; };
 		2CC08A0D276CA9740010318B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC08A0C276CA9740010318B /* Person.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		2C8C29022768F8E1000E4F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2C9CEBEC276F32D400A9500D /* all the think she said.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "all the think she said.mp3"; path = "../../../../../../Music/Bounces/all the think she said.mp3"; sourceTree = "<group>"; };
+		2CB00663276F631500BF78D6 /* toy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toy.mp3; path = ../../../../../../Music/Bounces/toy.mp3; sourceTree = "<group>"; };
 		2CC08A0A276CA9660010318B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2CC08A0C276CA9740010318B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				2C8C28FD2768F8E1000E4F2C /* Assets.xcassets */,
 				2C586F36276CFF14004BCE1C /* Nas ne dogonjat.mp3 */,
 				2C9CEBEC276F32D400A9500D /* all the think she said.mp3 */,
+				2CB00663276F631500BF78D6 /* toy.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				2C586F37276CFF14004BCE1C /* Nas ne dogonjat.mp3 in Resources */,
 				2C8C29012768F8E1000E4F2C /* LaunchScreen.storyboard in Resources */,
 				2C8C28FE2768F8E1000E4F2C /* Assets.xcassets in Resources */,
+				2CB00664276F631500BF78D6 /* toy.mp3 in Resources */,
 				2C9CEBED276F32D400A9500D /* all the think she said.mp3 in Resources */,
 				2C8C28FC2768F8DF000E4F2C /* Main.storyboard in Resources */,
 			);
