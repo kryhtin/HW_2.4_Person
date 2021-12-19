@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		2C586F32276CFCE6004BCE1C /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		2C586F34276CFD0E004BCE1C /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
-		2C586F36276CFF14004BCE1C /* Nas ne dogonjat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nas ne dogonjat.mp3"; path = "../../../../../../Music/Bounces/Nas ne dogonjat.mp3"; sourceTree = "<group>"; };
+		2C586F36276CFF14004BCE1C /* Nas ne dogonjat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nas ne dogonjat.mp3"; path = "HW_2.2_Authorization/Resources/Nas ne dogonjat.mp3"; sourceTree = SOURCE_ROOT; };
 		2C6F3803276CCEC1003461B3 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		2C772394276F9264008B9897 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2C8C28F12768F8DF000E4F2C /* HW_2.2_Authorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_2.2_Authorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,8 +40,8 @@
 		2C8C29002768F8E1000E4F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8C29022768F8E1000E4F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8C290A2768F9E2000E4F2C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		2C9CEBEC276F32D400A9500D /* all the think she said.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "all the think she said.mp3"; path = "../../../../../../Music/Bounces/all the think she said.mp3"; sourceTree = "<group>"; };
-		2CB00663276F631500BF78D6 /* toy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toy.mp3; path = ../../../../../../Music/Bounces/toy.mp3; sourceTree = "<group>"; };
+		2C9CEBEC276F32D400A9500D /* all the think she said.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "all the think she said.mp3"; path = "HW_2.2_Authorization/Resources/all the think she said.mp3"; sourceTree = SOURCE_ROOT; };
+		2CB00663276F631500BF78D6 /* toy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toy.mp3; path = HW_2.2_Authorization/Resources/toy.mp3; sourceTree = SOURCE_ROOT; };
 		2CC08A0A276CA9660010318B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2CC08A0C276CA9740010318B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
